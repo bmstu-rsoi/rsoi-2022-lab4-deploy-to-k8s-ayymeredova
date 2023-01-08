@@ -1,0 +1,40 @@
+payment:
+  service:
+    port: 8050
+    image:
+      name: ayjahanmeredova/rsoi-payment-service
+      version: "1.0"
+    database:
+      name: payments
+      username: program
+      password: test
+
+rental:
+  service:
+    port: 8060
+    image:
+      name: ayjahanmeredova/rsoi-rental-service
+      version: "1.0"
+    database: 
+      name: rentals
+      username: program
+      password: test
+
+cars:
+  service:
+    port: 8070
+    image:
+      name: ayjahanmeredova/rsoi-cars-service
+      version: "1.0"
+    database: 
+      name: cars
+      username: program
+      password: test
+
+gateway:
+  service:
+    port: 8080
+    image:
+      name: ayjahanmeredova/rsoi-api-gateway
+      version: "1.0"
+    isGateway: true

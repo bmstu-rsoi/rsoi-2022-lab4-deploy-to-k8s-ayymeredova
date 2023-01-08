@@ -51,3 +51,9 @@ Kubernetes Cluster, т.е. готовый кластер k8s, предостав
 ### Варианты заданий
 
 Распределение вариантов заданий аналогично [ЛР #2](https://github.com/bmstu-rsoi/lab2-template).
+
+docker buildx build --push -t ayjahanmeredova/rsoi-api-gateway:1.0 --platform=linux/amd64 src/gatewayService
+
+docker buildx build --push -t ayjahanmeredova/rsoi-cars-service:1.0 --platform=linux/amd64 src/carsService
+docker buildx build --push -t ayjahanmeredova/rsoi-rental-service:1.0 --platform=linux/amd64 src/rentalService
+docker buildx build --push -t ayjahanmeredova/rsoi-payment-service:1.0 --platform=linux/amd64 src/paymentService
